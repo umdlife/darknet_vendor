@@ -6,7 +6,7 @@ project(darknet_vendor VERSION 0.1.0)
 ####################
 
 option(DARKNET_CUDA "Build darknet with CUDA support" ON)
-option(DARKNET_OPENCV "Build darknet with OpenCV support" ON)
+option(DARKNET_OPENCV "Build darknet with OpenCV support" OFF)
 
 ####################
 # Download Darknet
