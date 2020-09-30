@@ -172,6 +172,7 @@ if(DARKNET_CUDA)
   target_link_libraries(darknet PUBLIC
     cuda cudart cublas curand
   )
+  link_directories(/usr/local/cuda/lib64)
 else()  # not using CUDA
   add_library(darknet SHARED ${darknet_lib_c_sources} ${darknet_lib_cpp_sources})
 endif()
